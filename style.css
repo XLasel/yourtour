@@ -196,7 +196,7 @@ main {
   width: 24px;
   height: 26px;
 
-  background-image: url(/img/icons/arrow-bt.svg);
+  background-image: url(img/icons/arrow-bt.svg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -206,7 +206,7 @@ main {
 /* Header */
 
 .header {
-  background-image: url(/img/header/header-img.jpg);
+  background-image: url(img/header/header-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -516,7 +516,7 @@ main {
   width: 26px;
   height: 26px;
 
-  background-image: url(/img/icons/ic-dropdown.svg);
+  background-image: url(img/icons/ic-dropdown.svg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -644,7 +644,7 @@ main {
   display: inline-block;
   width: 0.82em;
   height: 0.64em;
-  background-image: url(/img/icons/check-mark.svg);
+  background-image: url(img/icons/check-mark.svg);
   background-repeat: no-repeat;
   background-size: cover;
 

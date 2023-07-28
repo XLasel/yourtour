@@ -1,0 +1,79 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+
+  margin: 0;
+}
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  border: 0;
+  background: none;
+  
+  vertical-align: baseline;
+  color: inherit;
+  
+}
+
+:focus {
+  outline: 0;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+}
+
+h1 {
+
+  @media (max-width: 576px) {
+    @include font(normal 700 34px / 38px "Roboto", 0.68px)
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    @include font(normal 700 59px / 73px "Roboto")
+  }
+
+  @media (min-width: 769px) {
+    @include font(normal 700 96px / 105px "Roboto", 1.92px)
+  }
+}
+
+h2 {
+  @media (max-width: 768px) {
+    @include font(normal 700 34px / 38px "Roboto", 0.68px)
+  }
+
+  @media (min-width: 769px) {
+    @include font(normal 700 59px / 73px "Roboto")
+  }
+}
+
+h3 {
+  @media (max-width: 768px) {
+    @include font(normal 700 23px / 28px "Roboto", 0.92px)
+  }
+
+  @media (min-width: 769px) {
+    @include font(normal 500 35px / 43px "Roboto")
+  }
+}
+
+body {
+  @extend %p-normal;
+
+  background: $beige100;
+  
+  color: $black;
+}

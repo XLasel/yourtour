@@ -1,0 +1,417 @@
+.constructor {
+    @extend %section-mrg-bottom;
+
+    &__top {
+        @media (max-width: 768px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__form {
+        @extend %main-border-radius;
+
+        width: 100%;
+        padding: 70px;
+        
+        background: $white;
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            padding: 60px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 20px 20px 40px;
+
+            border-radius: 30px;
+        }
+
+        & *::placeholder {
+            color: $gray300;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 33px;
+        column-gap: 30px;
+
+        @media (max-width: 1024px) {
+            column-gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            row-gap: 30px;
+        }
+    }
+
+    &__form-field:nth-child(-n+6) {
+        flex-basis: calc(50% - 15px);
+
+        @media (max-width: 1024px) {
+            flex-basis: calc(50% - 10px);
+
+            @media (max-width: 576px) {
+                flex-basis: 100%;
+            }
+        }
+    }
+
+    &__form-field:nth-child(n+7):nth-child(-n+10) {
+        flex-basis: 100%;
+    }
+
+    &__form-field {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__form-label {
+        display: block;
+    }
+
+    &__form-input,
+    &__form-textarea,
+    &__form-select,
+    &__form-date {
+        @extend %p-normal;
+
+        
+        display: block;
+        
+        width: 100%;
+        padding: 19px;
+        
+        background-color: $beige100;
+        border: 1px solid $beige100;
+        border-radius: 10px;
+        
+        cursor: pointer;
+
+        transition: all 0.3s ease;
+
+        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+            &:focus {
+                background-color: $beige200;
+                border-color: $gray300;
+            }
+
+            &:hover {
+                background-color: $beige200;
+            }
+        }
+    }
+
+    &__form-input,
+    &__form-textarea {
+        @media (max-width: 768px) {
+            padding: 9px;
+        }
+    }
+
+    &__form-select {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+
+        padding-right: 50px;
+        
+        color: $black;
+
+        @media (max-width: 768px) {
+            padding: 9px 50px 9px 9px;
+
+            @media (max-width: 576px) {
+                padding: 10.5px 50px 10.5px 9px;
+            }
+
+        }
+
+        &::-ms-expand {
+            display: none;
+        }
+
+        & option {
+            background-color: $white;
+            
+            color: $black;
+        }
+
+        &--placeholder {
+            color: $gray300;
+        }
+    }
+
+    &__custom-arrow {
+        position: relative;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            
+            display: block;
+            
+            width: 26px;
+            height: 26px;
+            
+            background-image: url('/img/icons/ic-dropdown.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            pointer-events: none;
+
+            transform: translateY(-50%);
+
+            @media (max-width: 768px) {
+                right: 10px;
+            }
+        }
+    }
+
+    &__form-date {
+        -webkit-appearance: none;
+
+        height: 68px;
+        
+        text-transform: uppercase;
+        letter-spacing: -0.6px;
+
+        @media (max-width: 768px) {
+            height: 43px;
+            padding: 9px;
+        }
+
+        &::-webkit-calendar-picker-indicator {
+            opacity: 0;
+        }
+    }
+
+    &__form-input--date-placeholder {
+        color: $gray300;
+    }
+
+    &__form-input--invalid {
+        border: 1px solid #f1c5c8;
+
+        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+            &:focus {
+                border-color: #f1c5c8;
+            }
+
+            &:hover {
+                border-color: #f1c5c8;
+            }
+        }
+    }
+
+    &__form-textarea {
+        height: 152px;
+
+        @media (max-width: 768px) {
+            height: 132px;
+        }
+    }
+
+    &__form-fieldset {
+        all: unset;
+
+        display: flex;
+        flex-direction: column;
+
+        & legend {
+            margin-bottom: 8px;
+        }
+    }
+
+    &__form-radio-flex {
+        display: flex;
+        align-items: center;
+        gap: 31px;
+    }
+
+    &__form-radio-label {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+            gap: 10px;
+        }
+
+        & input {
+            position: absolute;
+
+            pointer-events: none;
+            opacity: 0;
+        }
+    }
+
+    &__form-radio-custom {
+        position: relative;
+        
+        display: inline-block;
+
+        width: 1.1em;
+        height: 1.1em;
+
+        border: 0.1em solid $black;
+        border-radius: 50%;
+    }
+
+    &__form-radio-input:checked+&__form-radio-custom::before {
+        content: '';
+        
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        display: inline-block;
+
+        width: 0.6em;
+        height: 0.6em;
+
+        background-color: $black;
+        border-radius: 50%;
+
+        transform: translate(-50%, -50%);
+    }
+
+    &__form-checkbox-lebel {
+        @extend %p-small;
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        color: $gray300;
+
+        cursor: pointer;
+        
+        @media (max-width: 1024px) {
+            gap: 12px;
+
+            @media (max-width: 576px) {
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            align-items: flex-start;
+
+            font: normal 400 16px / 23px "Roboto", sans-serif;
+            letter-spacing: 0px;
+        }
+
+        & input {
+            position: absolute;
+            
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        & a {
+            @extend %link;
+        }
+    }
+
+
+    &__form-checkbox-custom {
+        position: relative;
+        
+        flex-shrink: 0;
+
+        width: 1.5em;
+        height: 1.5em;
+
+        border: 0.12em solid $black;
+        border-radius: 20%;
+
+        @media (max-width: 768px) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__form-checkbox-input:checked+&__form-checkbox-custom::before {
+        content: '';
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        display: inline-block;
+        
+        width: 0.82em;
+        height: 0.64em;
+
+        background-image: url('/img/icons/check-mark.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        transform: translate(-50%, -50%);
+    }
+
+    &__form-buttons {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+
+        @media (max-width: 768px) {
+            gap: 10px;
+        }
+    }
+
+    &__form-button {
+        @extend %p-normal;
+        
+        width: 235px;
+        height: 58px;
+        padding: 0.75px;
+
+        background-color: $green100;
+        border-radius: 10px;
+
+        color: $green400;
+
+        cursor: pointer;
+        
+        transition: all 0.3s ease;
+
+        @media (max-width: 768px) {
+            width: 134px;
+            height: 47px;
+        }
+
+        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+            &:hover {
+                background-color: $gray100;
+            }
+
+            &:active {
+                background-color: $gray200;
+            }
+        }
+
+        &--primery {
+            background-color: $green400;
+            
+            color: $white;
+
+            @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+                &:hover {
+                    background-color: $green300;
+                }
+
+                &:active {
+                    background-color: $green200;
+                }
+            }
+        }
+    }
+}

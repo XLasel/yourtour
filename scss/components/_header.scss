@@ -1,0 +1,197 @@
+.header {
+    @extend %section-mrg-bottom;
+    
+    background-image: url('/img/header/header-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    color: $white;
+    
+    @media (max-width: 1024px) {
+        background-image: url('/img/header/header-img-small.jpg');
+    }
+
+    &--nav-fixed {
+        padding-top: 88px;
+    }
+
+    &__nav-wrapper {
+        width: 100%;
+        height: 88px;
+
+        &--fixed {
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            
+            background: rgba(243, 239, 232, 0.6);
+            backdrop-filter: blur(27px);
+            
+            color: $black;
+            
+            transition: all 0.3s ease;
+
+            & svg path {
+                fill: $black;
+            }
+        }
+
+        &--hidden {
+            pointer-events: none;
+            opacity: 0;
+            
+            transition: all 0.3s ease;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        max-width: 1282px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 57px;
+        
+        @media (max-width: 668px) {
+            padding: 0 20px;
+        }
+
+        & a {
+            text-decoration: none;
+        }
+    }
+
+    &__logo-img {
+        display: block;
+
+        width: 182px;
+        height: 32px;
+
+        @media (max-width: 769px) {
+            width: 133px;
+            height: 24px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        
+        padding: 0;
+        
+        list-style: none;
+
+        @media (max-width: 1024px) {
+            gap: 30px
+        }
+
+        @media (max-width: 950px) {
+            display: none;
+        }
+
+        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+            & a:hover {
+                text-decoration-line: underline;
+                text-underline-offset: 7px;
+                text-decoration-thickness: 1px;
+            }
+        }
+    }
+
+    &__content {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 119px 0;
+
+        text-align: center;
+
+        @media (max-width: 576px) {
+            padding: 52px 0;
+
+        }
+    }
+
+    &__content-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        @media (max-width: 576px) {
+            gap: 40px;
+        }
+    }
+
+    &__title {
+        margin: auto;
+
+        @media (max-width: 1024px) {
+            max-width: 100%;
+            padding: 0 55px;
+
+            @media (max-width: 576px) {
+                max-width: 360px;
+                padding: 0;
+            }
+        }
+    }
+
+    &__text {
+        max-width: 612px;
+        padding: 0 25px;
+
+        @media (max-width: 1024px) {
+            max-width: 492px;
+
+            @media (max-width: 576px) {
+                max-width: 360px;
+            }
+        }
+    }
+
+    &__btn {
+        @extend %p-small;
+
+        padding: 5px 20px;
+        
+        background: $white;
+        border-radius: 10px;
+        
+        text-decoration: none;
+        
+        cursor: pointer;
+
+        transition: all 0.3s ease;
+
+        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+            &:hover {
+                background-color: $orange200;
+            }
+
+            &:hover span {
+                color: $white;
+            }
+
+            &:active {
+                background-color: $orange100;
+            }
+
+            &:active span {
+                color: $black;
+            }
+        }
+
+        & span {
+            color: $black;
+
+            transition: all 0.3s ease;
+        }
+    }
+
+}

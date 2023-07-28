@@ -1,0 +1,69 @@
+%p-normal {
+    @media (max-width: 768px) {
+        @include font(normal 400 16px / 23px "Roboto")
+    }
+
+    @media (min-width: 769px) {
+        @include font(normal 400 20px / 28px "Roboto")
+    }
+}
+
+%p-big {
+    @media (max-width: 768px) {
+        @include font(normal 700 16px / 23px "Roboto")
+    }
+
+    @media (min-width: 769px) {
+        @include font(normal 700 23px / 28px "Roboto")
+    }
+}
+
+%p-small {
+    @media (max-width: 768px) {
+        @include font(normal 400 16px / 23px "Roboto", -0.16px)
+    }
+
+    @media (min-width: 769px) {
+        @include font(normal 400 17px / 24px "Roboto", -0.17px)
+    }
+}
+
+%link {
+    text-decoration: none;
+    
+    color: $black !important;
+    
+    transition: all 0.3s ease;
+
+    @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:active {
+            text-decoration: underline;
+            
+            color: $green400;
+        }
+    }
+}
+
+%section-mrg-bottom {
+    @media (max-width: 768px) {
+        margin-bottom: map-get($section-mrg-bottom, small);
+    }
+
+    @media (min-width: 769px) {
+        margin-bottom: map-get($section-mrg-bottom, large);
+    }
+}
+
+%main-border-radius {
+    @media (max-width: 768px) {
+        border-radius: map-get($main-border-radius, small);
+    }
+
+    @media (min-width: 769px) {
+        border-radius: map-get($main-border-radius, large);
+    }
+}

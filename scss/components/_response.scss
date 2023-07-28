@@ -1,0 +1,90 @@
+.response {
+    @extend %section-mrg-bottom;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        @media (max-width: 1024px) {
+            gap: 18px;
+        }
+
+        @media (max-width: 668px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__card {
+        @extend %main-border-radius;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 70px;
+        flex-basis: 50%;
+
+        min-height: 672px;
+        padding: 40px;
+        
+        background-color: $beige200;
+
+        @media (max-width: 768px) {
+            gap: 40px;
+            
+            padding: 20px;
+        }
+
+        @media (max-width: 668px) {
+            flex-basis: 100%;
+            
+            min-height: auto;
+        }
+    }
+
+    &__text {
+        @extend %p-big;
+
+        & p {
+            @media (max-width: 768px) {
+                width: 98%;
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: 28px;
+                
+                @media (max-width: 768px) {
+                    margin-bottom: 23px;
+                  }
+            }
+        }
+    }
+
+    &__user {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.user {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 8px;
+
+        & p {
+            @extend %p-small;
+
+            color: $gray300;
+        }
+    }
+
+    &__avatar {
+        width: 75px;
+        height: 75px;
+        
+        border-radius: 100px;
+    }
+
+}

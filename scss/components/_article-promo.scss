@@ -1,0 +1,49 @@
+.article-promo {
+    @extend %section-mrg-bottom;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        @media (max-width: 668px) {
+            flex-wrap: wrap;
+
+            text-align: center;
+        }
+    }
+
+    &__img {
+        @extend %main-border-radius;
+
+        width: 370px;
+        height: 370px;
+        object-fit: cover;
+
+        @media (max-width: 668px) {
+            width: 130px;
+            height: 133px;
+        }
+    }
+
+    &__info {
+        max-width: 371px;
+
+        & a {
+            @extend %link;
+        }
+
+        @media (max-width: 668px) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__tittle {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: $gray300;
+    }
+}

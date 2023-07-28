@@ -1,0 +1,4 @@
+@mixin font($font, $letter-spacing: 0px) {
+    font: $font, sans-serif;
+    letter-spacing: $letter-spacing;
+}

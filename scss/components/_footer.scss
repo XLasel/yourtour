@@ -1,0 +1,64 @@
+.footer {
+    background: $beige200;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 25px;
+        
+        padding: 30px 1px;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 7px;
+        }
+
+        @media (max-width: 576px) {
+            padding: 21px 1px;
+        }
+    }
+
+    &__text {
+        color: $gray300;
+    }
+
+    &__social {
+        display: flex;
+        gap: 25px;
+
+        padding: 0;
+
+        list-style: none;
+
+        @media (max-width: 768px) {
+            gap: 15px;
+        }
+    }
+
+    &__social-item {
+        display: flex;
+        gap: 10px;
+
+        @media (max-width: 768px) {
+            gap: 5px;
+        }
+    }
+
+    &__social-link {
+        text-decoration: none;
+
+        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+            &:hover {
+                text-decoration-line: underline;
+                text-underline-offset: 4px;
+            }
+
+            &:active {
+                text-decoration-line: underline;
+                text-underline-offset: 4px;
+            }
+        }
+    }
+}

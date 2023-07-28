@@ -11,7 +11,6 @@ const resetButton = constructorForm.querySelector('button[type="reset"]')
 
 let scrollById = false;
 
-
 headerLogo.addEventListener('click', (event) => {
   event.preventDefault();
   window.scrollTo({

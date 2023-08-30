@@ -41,7 +41,7 @@ h1 {
     @include font(normal 700 34px / 38px "Roboto", 0.68px)
   }
 
-  @media (min-width: 576px) and (max-width: 768px) {
+  @media (min-width: 577px) and (max-width: 768px) {
     @include font(normal 700 59px / 73px "Roboto")
   }
 

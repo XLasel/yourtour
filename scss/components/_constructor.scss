@@ -15,7 +15,7 @@
         
         background: $white;
 
-        @media (min-width: 768px) and (max-width: 1024px) {
+        @media (min-width: 769px) and (max-width: 1024px) {
             padding: 60px;
         }
 
@@ -48,12 +48,12 @@
     &__form-field:nth-child(-n+6) {
         flex-basis: calc(50% - 15px);
 
-        @media (max-width: 1024px) {
+        @media (min-width: 577px) and (max-width: 1024px) {
             flex-basis: calc(50% - 10px);
+        }
 
-            @media (max-width: 576px) {
-                flex-basis: 100%;
-            }
+        @media (max-width: 576px) {
+            flex-basis: 100%;
         }
     }
 
@@ -119,13 +119,12 @@
         
         color: $black;
 
-        @media (max-width: 768px) {
+        @media (min-width: 577px) and (max-width: 768px) {
             padding: 9px 50px 9px 9px;
+        }
 
-            @media (max-width: 576px) {
-                padding: 10.5px 50px 10.5px 9px;
-            }
-
+        @media (max-width: 576px) {
+            padding: 10.5px 50px 10.5px 9px;
         }
 
         &::-ms-expand {
@@ -293,12 +292,12 @@
 
         cursor: pointer;
         
-        @media (max-width: 1024px) {
+        @media (min-width: 577px) and (max-width: 1024px) {
             gap: 12px;
+        }
 
-            @media (max-width: 576px) {
-                gap: 10px;
-            }
+        @media (max-width: 576px) {
+            gap: 10px;
         }
 
         @media (max-width: 768px) {

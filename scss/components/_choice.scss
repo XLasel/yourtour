@@ -72,7 +72,7 @@
     &__card {
         flex-basis: calc((100%/3) - 20px);
 
-        @media (min-width: 668px) and (max-width: 1024px) {
+        @media (min-width: 669px) and (max-width: 1024px) {
             flex-basis: calc(50% - 9px);
         }
 

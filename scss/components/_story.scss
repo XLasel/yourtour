@@ -74,17 +74,17 @@
 
     &__tittle {
         margin-bottom: 37px;
+        
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
 
         &--transfer {
-            @media (max-width: 366px) {
+            @media (max-width: 380px) {
                 display: block;
                 content: "\A";
                 white-space: pre;
             }
-        }
-
-        @media (max-width: 768px) {
-            margin-bottom: 20px;
         }
     }
 

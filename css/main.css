@@ -441,7 +441,7 @@ a:visited {
     letter-spacing: 0.68px;
   }
 }
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
   h1 {
     font: normal 700 59px/73px "Roboto", sans-serif;
     letter-spacing: 0px;
@@ -698,13 +698,13 @@ main {
 .header__title {
   margin: auto;
 }
-@media (max-width: 1024px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .header__title {
     max-width: 100%;
     padding: 0 55px;
   }
 }
-@media (max-width: 1024px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .header__title {
     max-width: 360px;
     padding: 0;
@@ -714,12 +714,12 @@ main {
   max-width: 612px;
   padding: 0 25px;
 }
-@media (max-width: 1024px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .header__text {
     max-width: 492px;
   }
 }
-@media (max-width: 1024px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .header__text {
     max-width: 360px;
   }
@@ -812,7 +812,7 @@ main {
 .choice__card {
   flex-basis: calc(33.3333333333% - 20px);
 }
-@media (min-width: 668px) and (max-width: 1024px) {
+@media (min-width: 669px) and (max-width: 1024px) {
   .choice__card {
     flex-basis: calc(50% - 9px);
   }
@@ -885,7 +885,7 @@ main {
   padding: 70px;
   background: #ffffff;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .constructor__form {
     padding: 60px;
   }
@@ -923,12 +923,12 @@ main {
 .constructor__form-field:nth-child(-n+6) {
   flex-basis: calc(50% - 15px);
 }
-@media (max-width: 1024px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .constructor__form-field:nth-child(-n+6) {
     flex-basis: calc(50% - 10px);
   }
 }
-@media (max-width: 1024px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .constructor__form-field:nth-child(-n+6) {
     flex-basis: 100%;
   }
@@ -975,12 +975,12 @@ main {
   padding-right: 50px;
   color: #1b1f2b;
 }
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
   .constructor__form-select {
     padding: 9px 50px 9px 9px;
   }
 }
-@media (max-width: 768px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .constructor__form-select {
     padding: 10.5px 50px 10.5px 9px;
   }
@@ -1110,12 +1110,12 @@ main {
   color: #a6a6a6;
   cursor: pointer;
 }
-@media (max-width: 1024px) {
+@media (min-width: 577px) and (max-width: 1024px) {
   .constructor__form-checkbox-lebel {
     gap: 12px;
   }
 }
-@media (max-width: 1024px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .constructor__form-checkbox-lebel {
     gap: 10px;
   }
@@ -1314,7 +1314,7 @@ main {
   justify-content: space-between;
   gap: 30px;
 }
-@media (min-width: 500px) and (max-width: 1024px) {
+@media (min-width: 501px) and (max-width: 1024px) {
   .gallery__row {
     gap: 20px;
   }
@@ -1336,12 +1336,12 @@ main {
   flex-basis: 0;
   height: 301px;
 }
-@media (max-width: 500px) {
+@media (min-width: 381px) and (max-width: 500px) {
   .gallery__item {
     height: 150px;
   }
 }
-@media (max-width: 500px) and (max-width: 380px) {
+@media (max-width: 380px) {
   .gallery__item {
     height: 110px;
   }
@@ -1412,16 +1412,16 @@ main {
 .ticket__tittle {
   margin-bottom: 37px;
 }
-@media (max-width: 366px) {
+@media (max-width: 768px) {
+  .ticket__tittle {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 380px) {
   .ticket__tittle--transfer {
     display: block;
     content: "\a";
     white-space: pre;
-  }
-}
-@media (max-width: 768px) {
-  .ticket__tittle {
-    margin-bottom: 20px;
   }
 }
 .ticket__text > * {

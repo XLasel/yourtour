@@ -131,14 +131,14 @@
     &__title {
         margin: auto;
 
-        @media (max-width: 1024px) {
+        @media (min-width: 577px) and (max-width: 1024px) {
             max-width: 100%;
             padding: 0 55px;
+        }
 
-            @media (max-width: 576px) {
-                max-width: 360px;
-                padding: 0;
-            }
+        @media (max-width: 576px) {
+            max-width: 360px;
+            padding: 0;
         }
     }
 
@@ -146,12 +146,12 @@
         max-width: 612px;
         padding: 0 25px;
 
-        @media (max-width: 1024px) {
+        @media (min-width: 577px) and (max-width: 1024px) {
             max-width: 492px;
+        }
 
-            @media (max-width: 576px) {
-                max-width: 360px;
-            }
+        @media (max-width: 576px) {
+            max-width: 360px;
         }
     }
 

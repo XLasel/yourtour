@@ -36,36 +36,35 @@ a:visited {
 }
 
 h1 {
-
-  @media (max-width: 576px) {
+  @include media(max, sm) {
     @include font(normal 700 34px / 38px "Roboto", 0.68px)
   }
 
-  @media (min-width: 577px) and (max-width: 768px) {
+  @include media(max, sm, lg) {
     @include font(normal 700 59px / 73px "Roboto")
   }
 
-  @media (min-width: 769px) {
+  @include media(min, lg) {
     @include font(normal 700 96px / 105px "Roboto", 1.92px)
   }
 }
 
 h2 {
-  @media (max-width: 768px) {
+  @include media(max, lg) {
     @include font(normal 700 34px / 38px "Roboto", 0.68px)
   }
 
-  @media (min-width: 769px) {
+  @include media(min, lg) {
     @include font(normal 700 59px / 73px "Roboto")
   }
 }
 
 h3 {
-  @media (max-width: 768px) {
+  @include media(max, lg) {
     @include font(normal 700 23px / 28px "Roboto", 0.92px)
   }
 
-  @media (min-width: 769px) {
+  @include media(min, lg) {
     @include font(normal 500 35px / 43px "Roboto")
   }
 }

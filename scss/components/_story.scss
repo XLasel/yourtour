@@ -6,7 +6,7 @@
         flex-direction: column;
         gap: 50px;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             gap: 20px;
         }
     }
@@ -29,7 +29,7 @@
     
     overflow: hidden;
 
-    @media (max-width: 768px) {
+    @include media(max, lg) {
         height: 455px;
     }
 
@@ -47,7 +47,7 @@
         transition: transform 300ms ease;
     }
 
-    @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+    @include hover {
         &:hover img {
             transform: scale(1.2);
         }
@@ -63,7 +63,7 @@
         flex-direction: column;
         justify-content: space-between;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             padding: 30px 25px 30px 30px;
         }
     }
@@ -75,12 +75,12 @@
     &__tittle {
         margin-bottom: 37px;
         
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             margin-bottom: 20px;
         }
 
         &--transfer {
-            @media (max-width: 380px) {
+            @include media(max, xxs) {
                 display: block;
                 content: "\A";
                 white-space: pre;
@@ -92,7 +92,7 @@
         &>* {
             margin-bottom: 28px;
 
-            @media (max-width: 768px) {
+            @include media(max, lg) {
                 margin-bottom: 23px;
             }
         }
@@ -101,14 +101,14 @@
     &__list {
         padding-left: 30px;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             padding-left: 24px;
         }
 
         & li::marker {
             font-size: 16px;
 
-            @media (max-width: 768px) {
+            @include media(max, lg) {
                 font-size: 13px;
             }
         }
@@ -127,7 +127,7 @@
         
         list-style: none;
 
-        @media (max-width: 576px) {
+        @include media(max, sm) {
             display: none;
         }
     }
@@ -137,7 +137,7 @@
         
         transition: color 0.3s ease;
 
-        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+        @include hover {
             &:hover {
                 text-decoration-line: underline;
                 text-underline-offset: 6px;

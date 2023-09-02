@@ -6,11 +6,11 @@
         justify-content: center;
         gap: 30px;
 
-        @media (max-width: 1024px) {
+        @include media(max, xxl) {
             gap: 18px;
         }
 
-        @media (max-width: 668px) {
+        @include media(max, md) {
             flex-wrap: wrap;
         }
     }
@@ -29,13 +29,13 @@
         
         background-color: $beige200;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             gap: 40px;
             
             padding: 20px;
         }
 
-        @media (max-width: 668px) {
+        @include media(max, md) {
             flex-basis: 100%;
             
             min-height: auto;
@@ -46,14 +46,14 @@
         @extend %p-big;
 
         & p {
-            @media (max-width: 768px) {
+            @include media(max, lg) {
                 width: 98%;
             }
 
             &:not(:last-of-type) {
                 margin-bottom: 28px;
                 
-                @media (max-width: 768px) {
+                @include media(max, lg) {
                     margin-bottom: 23px;
                   }
             }

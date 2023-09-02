@@ -16,7 +16,7 @@
 
     transition: all 0.3s ease;
 
-    @media (max-width: 768px) {
+    @include media(max, lg) {
         width: 163px;
         margin: -8px -20px;
         padding: 9.5px 58px 9.5px 20px;
@@ -47,7 +47,7 @@
         transform: translateY(-50%);
     }
 
-    @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+    @include hover {
         &:hover,
         .card:hover &,
         .ticket:hover & {

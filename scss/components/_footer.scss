@@ -9,13 +9,13 @@
         
         padding: 30px 1px;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             justify-content: center;
             flex-wrap: wrap;
             row-gap: 7px;
         }
 
-        @media (max-width: 576px) {
+        @include media(max, sm) {
             padding: 21px 1px;
         }
     }
@@ -32,7 +32,7 @@
 
         list-style: none;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             gap: 15px;
         }
     }
@@ -41,7 +41,7 @@
         display: flex;
         gap: 10px;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             gap: 5px;
         }
     }
@@ -49,7 +49,7 @@
     &__social-link {
         text-decoration: none;
 
-        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+        @include hover {
             &:hover {
                 text-decoration-line: underline;
                 text-underline-offset: 4px;

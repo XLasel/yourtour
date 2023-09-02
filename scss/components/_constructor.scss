@@ -2,7 +2,7 @@
     @extend %section-mrg-bottom;
 
     &__top {
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             margin-bottom: 40px;
         }
     }
@@ -15,11 +15,11 @@
         
         background: $white;
 
-        @media (min-width: 769px) and (max-width: 1024px) {
+        @include media(max, lg, xxl) {
             padding: 60px;
         }
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             padding: 20px 20px 40px;
 
             border-radius: 30px;
@@ -36,11 +36,11 @@
         row-gap: 33px;
         column-gap: 30px;
 
-        @media (max-width: 1024px) {
+        @include media(max, xxl) {
             column-gap: 20px;
         }
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             row-gap: 30px;
         }
     }
@@ -48,11 +48,11 @@
     &__form-field:nth-child(-n+6) {
         flex-basis: calc(50% - 15px);
 
-        @media (min-width: 577px) and (max-width: 1024px) {
+        @include media(max, sm, xxl){
             flex-basis: calc(50% - 10px);
         }
 
-        @media (max-width: 576px) {
+        @include media(max, sm) {
             flex-basis: 100%;
         }
     }
@@ -91,7 +91,7 @@
 
         transition: all 0.3s ease;
 
-        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+        @include hover {
             &:focus {
                 background-color: $beige200;
                 border-color: $gray300;
@@ -105,7 +105,7 @@
 
     &__form-input,
     &__form-textarea {
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             padding: 9px;
         }
     }
@@ -119,11 +119,11 @@
         
         color: $black;
 
-        @media (min-width: 577px) and (max-width: 768px) {
+        @include media(max, sm, lg) {
             padding: 9px 50px 9px 9px;
         }
 
-        @media (max-width: 576px) {
+        @include media(max, sm) {
             padding: 10.5px 50px 10.5px 9px;
         }
 
@@ -165,7 +165,7 @@
 
             transform: translateY(-50%);
 
-            @media (max-width: 768px) {
+            @include media(max, lg) {
                 right: 10px;
             }
         }
@@ -179,7 +179,7 @@
         text-transform: uppercase;
         letter-spacing: -0.6px;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             height: 43px;
             padding: 9px;
         }
@@ -196,7 +196,7 @@
     &__form-input--invalid {
         border: 1px solid #f1c5c8;
 
-        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+        @include hover {
             &:focus {
                 border-color: #f1c5c8;
             }
@@ -210,7 +210,7 @@
     &__form-textarea {
         height: 152px;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             height: 132px;
         }
     }
@@ -239,7 +239,7 @@
 
         cursor: pointer;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             gap: 10px;
         }
 
@@ -292,15 +292,15 @@
 
         cursor: pointer;
         
-        @media (min-width: 577px) and (max-width: 1024px) {
+        @include media(max, sm, xxl) {
             gap: 12px;
         }
 
-        @media (max-width: 576px) {
+        @include media(max, sm) {
             gap: 10px;
         }
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             align-items: flex-start;
 
             font: normal 400 16px / 23px "Roboto", sans-serif;
@@ -331,7 +331,7 @@
         border: 0.12em solid $black;
         border-radius: 20%;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             width: 20px;
             height: 20px;
         }
@@ -361,7 +361,7 @@
         justify-content: flex-start;
         gap: 30px;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             gap: 10px;
         }
     }
@@ -382,12 +382,12 @@
         
         transition: all 0.3s ease;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             width: 134px;
             height: 47px;
         }
 
-        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+        @include hover {
             &:hover {
                 background-color: $gray100;
             }
@@ -402,7 +402,7 @@
             
             color: $white;
 
-            @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+            @include hover {
                 &:hover {
                     background-color: $green300;
                 }

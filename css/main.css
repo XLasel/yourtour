@@ -326,39 +326,39 @@ template {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__form-button, .constructor__form-input, .constructor__form-textarea, .constructor__form-select, .constructor__form-date, body {
     font: normal 400 16px/23px "Roboto", sans-serif;
     letter-spacing: 0px;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .constructor__form-button, .constructor__form-input, .constructor__form-textarea, .constructor__form-select, .constructor__form-date, body {
     font: normal 400 20px/28px "Roboto", sans-serif;
     letter-spacing: 0px;
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .response__text, .choice__list, .btn-details {
     font: normal 700 16px/23px "Roboto", sans-serif;
     letter-spacing: 0px;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .response__text, .choice__list, .btn-details {
     font: normal 700 23px/28px "Roboto", sans-serif;
     letter-spacing: 0px;
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .user__item p, .constructor__form-checkbox-lebel, .card__body-promo p, .header__btn {
     font: normal 400 16px/23px "Roboto", sans-serif;
     letter-spacing: -0.16px;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .user__item p, .constructor__form-checkbox-lebel, .card__body-promo p, .header__btn {
     font: normal 400 17px/24px "Roboto", sans-serif;
     letter-spacing: -0.17px;
@@ -380,23 +380,23 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .article-promo, .story, .gallery, .response, .constructor, .choice, .header {
     margin-bottom: 75px;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .article-promo, .story, .gallery, .response, .constructor, .choice, .header {
     margin-bottom: 135px;
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .article-promo__img, .ticket, .gallery__item img, .response__card, .constructor__form, .card, .btn-details {
     border-radius: 20px;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .article-promo__img, .ticket, .gallery__item img, .response__card, .constructor__form, .card, .btn-details {
     border-radius: 50px;
   }
@@ -435,45 +435,45 @@ a:visited {
   color: inherit;
 }
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   h1 {
     font: normal 700 34px/38px "Roboto", sans-serif;
     letter-spacing: 0.68px;
   }
 }
-@media (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
   h1 {
     font: normal 700 59px/73px "Roboto", sans-serif;
     letter-spacing: 0px;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   h1 {
     font: normal 700 96px/105px "Roboto", sans-serif;
     letter-spacing: 1.92px;
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   h2 {
     font: normal 700 34px/38px "Roboto", sans-serif;
     letter-spacing: 0.68px;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   h2 {
     font: normal 700 59px/73px "Roboto", sans-serif;
     letter-spacing: 0px;
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   h3 {
     font: normal 700 23px/28px "Roboto", sans-serif;
     letter-spacing: 0.92px;
   }
 }
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   h3 {
     font: normal 500 35px/43px "Roboto", sans-serif;
     letter-spacing: 0px;
@@ -500,7 +500,7 @@ main {
   margin: 0 auto;
   padding: 0 53px;
 }
-@media (max-width: 668px) {
+@media only screen and (max-width: 668px) {
   .container {
     padding: 0 21px;
   }
@@ -510,7 +510,7 @@ main {
   margin: 0 auto;
   padding: 0 30px;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .container-fluid {
     padding: 0 21px;
   }
@@ -527,7 +527,7 @@ main {
   margin-bottom: 100px;
   text-align: center;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .section__top {
     gap: 20px;
     margin-bottom: 50px;
@@ -549,7 +549,7 @@ main {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .btn-details {
     width: 163px;
     margin: -8px -20px;
@@ -589,7 +589,7 @@ main {
   background-position: center;
   color: #ffffff;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .header {
     background-image: url("../img/header/header-img-small.jpg");
   }
@@ -629,7 +629,7 @@ main {
   margin: 0 auto;
   padding: 0 57px;
 }
-@media (max-width: 668px) {
+@media only screen and (max-width: 668px) {
   .header__nav {
     padding: 0 20px;
   }
@@ -642,7 +642,7 @@ main {
   width: 182px;
   height: 32px;
 }
-@media (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .header__logo-img {
     width: 133px;
     height: 24px;
@@ -655,12 +655,12 @@ main {
   padding: 0;
   list-style: none;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .header__list {
     gap: 30px;
   }
 }
-@media (max-width: 950px) {
+@media only screen and (max-width: 950px) {
   .header__list {
     display: none;
   }
@@ -678,7 +678,7 @@ main {
   padding: 119px 0;
   text-align: center;
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .header__content {
     padding: 52px 0;
   }
@@ -690,7 +690,7 @@ main {
   align-items: center;
   gap: 50px;
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .header__content-flex {
     gap: 40px;
   }
@@ -698,13 +698,13 @@ main {
 .header__title {
   margin: auto;
 }
-@media (min-width: 577px) and (max-width: 1024px) {
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
   .header__title {
     max-width: 100%;
     padding: 0 55px;
   }
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .header__title {
     max-width: 360px;
     padding: 0;
@@ -714,12 +714,12 @@ main {
   max-width: 612px;
   padding: 0 25px;
 }
-@media (min-width: 577px) and (max-width: 1024px) {
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
   .header__text {
     max-width: 492px;
   }
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .header__text {
     max-width: 360px;
   }
@@ -755,7 +755,7 @@ main {
   gap: 35px;
   margin-bottom: 106px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .choice__top {
     gap: 30px;
     margin-bottom: 50px;
@@ -770,7 +770,7 @@ main {
   padding: 0;
   list-style: none;
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .choice__list {
     flex-wrap: wrap;
     gap: 10px;
@@ -789,7 +789,7 @@ main {
   text-underline-offset: 9px;
   text-decoration-thickness: 2px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .choice__list-item--desktop {
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
@@ -804,7 +804,7 @@ main {
   justify-content: space-between;
   gap: 30px;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .choice__flex {
     gap: 18px;
   }
@@ -812,12 +812,12 @@ main {
 .choice__card {
   flex-basis: calc(33.3333333333% - 20px);
 }
-@media (min-width: 669px) and (max-width: 1024px) {
+@media only screen and (min-width: 669px) and (max-width: 1024px) {
   .choice__card {
     flex-basis: calc(50% - 9px);
   }
 }
-@media (max-width: 668px) {
+@media only screen and (max-width: 668px) {
   .choice__card {
     flex-basis: 100%;
   }
@@ -830,7 +830,7 @@ main {
   cursor: pointer;
   overflow: hidden;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .card {
     height: 318px;
   }
@@ -845,7 +845,7 @@ main {
   padding: 50px;
   color: #ffffff;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .card__body {
     padding: 25px;
   }
@@ -853,7 +853,7 @@ main {
 .card__title {
   margin-bottom: 16px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .card__title {
     margin-bottom: 13px;
   }
@@ -875,7 +875,7 @@ main {
   }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__top {
     margin-bottom: 40px;
   }
@@ -885,12 +885,12 @@ main {
   padding: 70px;
   background: #ffffff;
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .constructor__form {
     padding: 60px;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__form {
     padding: 20px 20px 40px;
     border-radius: 30px;
@@ -909,13 +909,13 @@ main {
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .constructor__flex {
     -moz-column-gap: 20px;
          column-gap: 20px;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__flex {
     row-gap: 30px;
   }
@@ -923,12 +923,12 @@ main {
 .constructor__form-field:nth-child(-n+6) {
   flex-basis: calc(50% - 15px);
 }
-@media (min-width: 577px) and (max-width: 1024px) {
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
   .constructor__form-field:nth-child(-n+6) {
     flex-basis: calc(50% - 10px);
   }
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .constructor__form-field:nth-child(-n+6) {
     flex-basis: 100%;
   }
@@ -963,7 +963,7 @@ main {
     background-color: #f4f0e9;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__form-input, .constructor__form-textarea {
     padding: 9px;
   }
@@ -975,12 +975,12 @@ main {
   padding-right: 50px;
   color: #1b1f2b;
 }
-@media (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 577px) and (max-width: 768px) {
   .constructor__form-select {
     padding: 9px 50px 9px 9px;
   }
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .constructor__form-select {
     padding: 10.5px 50px 10.5px 9px;
   }
@@ -1012,7 +1012,7 @@ main {
   pointer-events: none;
   transform: translateY(-50%);
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__custom-arrow::before {
     right: 10px;
   }
@@ -1023,7 +1023,7 @@ main {
   text-transform: uppercase;
   letter-spacing: -0.6px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__form-date {
     height: 43px;
     padding: 9px;
@@ -1049,7 +1049,7 @@ main {
 .constructor__form-textarea {
   height: 152px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__form-textarea {
     height: 132px;
   }
@@ -1073,7 +1073,7 @@ main {
   gap: 11px;
   cursor: pointer;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__form-radio-label {
     gap: 10px;
   }
@@ -1110,17 +1110,17 @@ main {
   color: #a6a6a6;
   cursor: pointer;
 }
-@media (min-width: 577px) and (max-width: 1024px) {
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
   .constructor__form-checkbox-lebel {
     gap: 12px;
   }
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .constructor__form-checkbox-lebel {
     gap: 10px;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__form-checkbox-lebel {
     align-items: flex-start;
     font: normal 400 16px/23px "Roboto", sans-serif;
@@ -1140,7 +1140,7 @@ main {
   border: 0.12em solid #1b1f2b;
   border-radius: 20%;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__form-checkbox-custom {
     width: 20px;
     height: 20px;
@@ -1164,7 +1164,7 @@ main {
   justify-content: flex-start;
   gap: 30px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__form-buttons {
     gap: 10px;
   }
@@ -1179,7 +1179,7 @@ main {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .constructor__form-button {
     width: 134px;
     height: 47px;
@@ -1211,12 +1211,12 @@ main {
   justify-content: center;
   gap: 30px;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .response__content {
     gap: 18px;
   }
 }
-@media (max-width: 668px) {
+@media only screen and (max-width: 668px) {
   .response__content {
     flex-wrap: wrap;
   }
@@ -1231,19 +1231,19 @@ main {
   padding: 40px;
   background-color: #f4f0e9;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .response__card {
     gap: 40px;
     padding: 20px;
   }
 }
-@media (max-width: 668px) {
+@media only screen and (max-width: 668px) {
   .response__card {
     flex-basis: 100%;
     min-height: auto;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .response__text p {
     width: 98%;
   }
@@ -1251,7 +1251,7 @@ main {
 .response__text p:not(:last-of-type) {
   margin-bottom: 28px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .response__text p:not(:last-of-type) {
     margin-bottom: 23px;
   }
@@ -1282,7 +1282,7 @@ main {
   gap: 30px;
   max-width: 100%;
 }
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .gallery__flexbox > .gallery__row:nth-child(1) > .gallery__item:nth-child(2) {
     display: none;
   }
@@ -1293,7 +1293,7 @@ main {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .gallery__flexbox > .gallery__row:nth-child(1) > .gallery__item:nth-child(3) {
     display: none;
   }
@@ -1304,7 +1304,7 @@ main {
     display: none;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .gallery__flexbox {
     gap: 18px;
   }
@@ -1314,17 +1314,17 @@ main {
   justify-content: space-between;
   gap: 30px;
 }
-@media (min-width: 501px) and (max-width: 1024px) {
+@media only screen and (min-width: 501px) and (max-width: 1024px) {
   .gallery__row {
     gap: 20px;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .gallery__row {
     gap: 18px;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .gallery__row--small {
     -moz-column-gap: 10px;
          column-gap: 10px;
@@ -1336,12 +1336,12 @@ main {
   flex-basis: 0;
   height: 301px;
 }
-@media (min-width: 381px) and (max-width: 500px) {
+@media only screen and (min-width: 381px) and (max-width: 500px) {
   .gallery__item {
     height: 150px;
   }
 }
-@media (max-width: 380px) {
+@media only screen and (max-width: 380px) {
   .gallery__item {
     height: 110px;
   }
@@ -1358,7 +1358,7 @@ main {
   flex-direction: column;
   gap: 50px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .story__content {
     gap: 20px;
   }
@@ -1372,7 +1372,7 @@ main {
   cursor: pointer;
   overflow: hidden;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ticket {
     height: 455px;
   }
@@ -1401,7 +1401,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ticket__body {
     padding: 30px 25px 30px 30px;
   }
@@ -1412,12 +1412,12 @@ main {
 .ticket__tittle {
   margin-bottom: 37px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ticket__tittle {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 380px) {
+@media only screen and (max-width: 380px) {
   .ticket__tittle--transfer {
     display: block;
     content: "\a";
@@ -1427,7 +1427,7 @@ main {
 .ticket__text > * {
   margin-bottom: 28px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ticket__text > * {
     margin-bottom: 23px;
   }
@@ -1435,7 +1435,7 @@ main {
 .ticket__list {
   padding-left: 30px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ticket__list {
     padding-left: 24px;
   }
@@ -1443,7 +1443,7 @@ main {
 .ticket__list li::marker {
   font-size: 16px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .ticket__list li::marker {
     font-size: 13px;
   }
@@ -1458,7 +1458,7 @@ main {
   padding: 0;
   list-style: none;
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .ticket__social {
     display: none;
   }
@@ -1487,7 +1487,7 @@ main {
   align-items: center;
   gap: 30px;
 }
-@media (max-width: 668px) {
+@media only screen and (max-width: 668px) {
   .article-promo__content {
     flex-wrap: wrap;
     text-align: center;
@@ -1499,7 +1499,7 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 668px) {
+@media only screen and (max-width: 668px) {
   .article-promo__img {
     width: 130px;
     height: 133px;
@@ -1508,7 +1508,7 @@ main {
 .article-promo__info {
   max-width: 371px;
 }
-@media (max-width: 668px) {
+@media only screen and (max-width: 668px) {
   .article-promo__info {
     flex-basis: 100%;
   }
@@ -1530,14 +1530,14 @@ main {
   gap: 25px;
   padding: 30px 1px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .footer__content {
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 7px;
   }
 }
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .footer__content {
     padding: 21px 1px;
   }
@@ -1551,7 +1551,7 @@ main {
   padding: 0;
   list-style: none;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .footer__social {
     gap: 15px;
   }
@@ -1560,7 +1560,7 @@ main {
   display: flex;
   gap: 10px;
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .footer__social-item {
     gap: 5px;
   }

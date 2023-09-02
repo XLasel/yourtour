@@ -8,7 +8,7 @@
     
     color: $white;
     
-    @media (max-width: 1024px) {
+    @include media(max, xxl) {
         background-image: url('../img/header/header-img-small.jpg');
     }
 
@@ -56,7 +56,7 @@
         margin: 0 auto;
         padding: 0 57px;
         
-        @media (max-width: 668px) {
+        @include media(max, md) {
             padding: 0 20px;
         }
 
@@ -71,7 +71,7 @@
         width: 182px;
         height: 32px;
 
-        @media (max-width: 769px) {
+        @include media(max, lg) {
             width: 133px;
             height: 24px;
         }
@@ -86,15 +86,15 @@
         
         list-style: none;
 
-        @media (max-width: 1024px) {
+        @include media(max, xxl) {
             gap: 30px
         }
 
-        @media (max-width: 950px) {
+        @include media(max, xl) {
             display: none;
         }
 
-        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+        @include hover {
             & a:hover {
                 text-decoration-line: underline;
                 text-underline-offset: 7px;
@@ -110,7 +110,7 @@
 
         text-align: center;
 
-        @media (max-width: 576px) {
+        @include media(max, sm) {
             padding: 52px 0;
 
         }
@@ -123,7 +123,7 @@
         align-items: center;
         gap: 50px;
 
-        @media (max-width: 576px) {
+        @include media(max, sm) {
             gap: 40px;
         }
     }
@@ -131,12 +131,12 @@
     &__title {
         margin: auto;
 
-        @media (min-width: 577px) and (max-width: 1024px) {
+        @include media(max, sm, xxl) {
             max-width: 100%;
             padding: 0 55px;
         }
 
-        @media (max-width: 576px) {
+        @include media(max, sm) {
             max-width: 360px;
             padding: 0;
         }
@@ -146,11 +146,11 @@
         max-width: 612px;
         padding: 0 25px;
 
-        @media (min-width: 577px) and (max-width: 1024px) {
+        @include media(max, sm, xxl) {
             max-width: 492px;
         }
 
-        @media (max-width: 576px) {
+        @include media(max, sm) {
             max-width: 360px;
         }
     }
@@ -169,7 +169,7 @@
 
         transition: all 0.3s ease;
 
-        @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+        @include hover {
             &:hover {
                 background-color: $orange200;
             }

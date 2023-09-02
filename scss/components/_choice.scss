@@ -6,7 +6,7 @@
         
         margin-bottom: 106px;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             gap: 30px;
            
             margin-bottom: 50px;
@@ -26,13 +26,13 @@
         
         list-style: none;
 
-        @media (max-width: 576px) {
+        @include media(max, sm) {
             flex-wrap: wrap;
             gap: 10px;
         }
 
         &-item {
-            @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+            @include hover {
                 &:hover {
                     text-decoration: underline;
                     text-underline-offset: 9px;
@@ -46,7 +46,7 @@
                 text-underline-offset: 9px;
                 text-decoration-thickness: 2px;
 
-                @media (max-width: 768px) {
+                @include media(max, lg) {
                     text-underline-offset: 4px;
                     text-decoration-thickness: 2px;
                 }
@@ -64,7 +64,7 @@
         justify-content: space-between;
         gap: 30px;
 
-        @media (max-width: 1024px) {
+        @include media(max, xxl) {
             gap: 18px;
         }
     }
@@ -72,11 +72,11 @@
     &__card {
         flex-basis: calc((100%/3) - 20px);
 
-        @media (min-width: 669px) and (max-width: 1024px) {
+        @include media(min, md, xxl) {
             flex-basis: calc(50% - 9px);
         }
 
-        @media (max-width: 668px) {
+        @include media(max, md) {
             flex-basis: calc(100%);
         }
     }
@@ -98,7 +98,7 @@
     
     overflow: hidden;
 
-    @media (max-width: 768px) {
+    @include media(max, lg) {
         height: 318px;
     }
 
@@ -114,7 +114,7 @@
 
         color: $white;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             padding: 25px;
         }
 
@@ -126,7 +126,7 @@
     &__title {
         margin-bottom: 16px;
 
-        @media (max-width: 768px) {
+        @include media(max, lg) {
             margin-bottom: 13px;
         }
     }
@@ -145,7 +145,7 @@
         transition: transform 300ms ease;
     }
 
-    @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+    @include hover {
         &:hover &__image {
             transform: scale(1.2);
         }

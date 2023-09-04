@@ -2,7 +2,7 @@
     @extend %section-mrg-bottom;
 
     &__top {
-        @include media(max, lg) {
+        @include tablet() {
             margin-bottom: 40px;
         }
     }
@@ -15,11 +15,11 @@
         
         background: $white;
 
-        @include media(max, lg, xxl) {
+        @include desktop() {
             padding: 60px;
         }
 
-        @include media(max, lg) {
+        @include tablet() {
             padding: 20px 20px 40px;
 
             border-radius: 30px;
@@ -36,11 +36,11 @@
         row-gap: 33px;
         column-gap: 30px;
 
-        @include media(max, xxl) {
+        @include desktop() {
             column-gap: 20px;
         }
 
-        @include media(max, lg) {
+        @include tablet() {
             row-gap: 30px;
         }
     }
@@ -48,11 +48,11 @@
     &__form-field:nth-child(-n+6) {
         flex-basis: calc(50% - 15px);
 
-        @include media(max, sm, xxl){
+        @include desktop() {
             flex-basis: calc(50% - 10px);
         }
 
-        @include media(max, sm) {
+        @include mobile() {
             flex-basis: 100%;
         }
     }
@@ -105,7 +105,7 @@
 
     &__form-input,
     &__form-textarea {
-        @include media(max, lg) {
+        @include tablet() {
             padding: 9px;
         }
     }
@@ -119,11 +119,11 @@
         
         color: $black;
 
-        @include media(max, sm, lg) {
+        @include tablet() {
             padding: 9px 50px 9px 9px;
         }
 
-        @include media(max, sm) {
+        @include mobile() {
             padding: 10.5px 50px 10.5px 9px;
         }
 
@@ -165,7 +165,7 @@
 
             transform: translateY(-50%);
 
-            @include media(max, lg) {
+            @include tablet() {
                 right: 10px;
             }
         }
@@ -179,7 +179,7 @@
         text-transform: uppercase;
         letter-spacing: -0.6px;
 
-        @include media(max, lg) {
+        @include tablet() {
             height: 43px;
             padding: 9px;
         }
@@ -210,7 +210,7 @@
     &__form-textarea {
         height: 152px;
 
-        @include media(max, lg) {
+        @include tablet() {
             height: 132px;
         }
     }
@@ -239,7 +239,7 @@
 
         cursor: pointer;
 
-        @include media(max, lg) {
+        @include tablet() {
             gap: 10px;
         }
 
@@ -292,19 +292,19 @@
 
         cursor: pointer;
         
-        @include media(max, sm, xxl) {
+        @include desktop() {
             gap: 12px;
         }
 
-        @include media(max, sm) {
-            gap: 10px;
-        }
-
-        @include media(max, lg) {
+        @include tablet() {
             align-items: flex-start;
 
             font: normal 400 16px / 23px "Roboto", sans-serif;
             letter-spacing: 0px;
+        }
+
+        @include mobile() {
+            gap: 10px;
         }
 
         & input {
@@ -331,7 +331,7 @@
         border: 0.12em solid $black;
         border-radius: 20%;
 
-        @include media(max, lg) {
+        @include tablet() {
             width: 20px;
             height: 20px;
         }
@@ -361,7 +361,7 @@
         justify-content: flex-start;
         gap: 30px;
 
-        @include media(max, lg) {
+        @include tablet() {
             gap: 10px;
         }
     }
@@ -382,7 +382,7 @@
         
         transition: all 0.3s ease;
 
-        @include media(max, lg) {
+        @include tablet() {
             width: 134px;
             height: 47px;
         }

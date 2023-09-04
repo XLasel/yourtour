@@ -6,11 +6,11 @@
         justify-content: center;
         gap: 30px;
 
-        @include media(max, xxl) {
+        @include desktop() {
             gap: 18px;
         }
 
-        @include media(max, md) {
+        @include mobile() {
             flex-wrap: wrap;
         }
     }
@@ -29,13 +29,13 @@
         
         background-color: $beige200;
 
-        @include media(max, lg) {
+        @include tablet() {
             gap: 40px;
             
             padding: 20px;
         }
 
-        @include media(max, md) {
+        @include mobile() {
             flex-basis: 100%;
             
             min-height: auto;
@@ -46,14 +46,14 @@
         @extend %p-big;
 
         & p {
-            @include media(max, lg) {
+            @include mobile() {
                 width: 98%;
             }
 
             &:not(:last-of-type) {
                 margin-bottom: 28px;
                 
-                @include media(max, lg) {
+                @include tablet() {
                     margin-bottom: 23px;
                   }
             }

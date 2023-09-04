@@ -7,7 +7,7 @@
         align-items: center;
         gap: 30px;
 
-        @include media(max, md) {
+        @include mobile() {
             flex-wrap: wrap;
 
             text-align: center;
@@ -21,7 +21,7 @@
         height: 370px;
         object-fit: cover;
 
-        @include media(max, md) {
+        @include tablet() {
             width: 130px;
             height: 133px;
         }
@@ -34,7 +34,7 @@
             @extend %link;
         }
 
-        @include media(max, md) {
+        @include mobile() {
             flex-basis: 100%;
         }
     }

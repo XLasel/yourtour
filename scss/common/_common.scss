@@ -36,36 +36,26 @@ a:visited {
 }
 
 h1 {
-  @include media(max, sm) {
-    @include font(normal 700 34px / 38px "Roboto", 0.68px)
-  }
+  @include font(normal 700 96px / 105px "Roboto", 1.92px);
 
-  @include media(max, sm, lg) {
-    @include font(normal 700 59px / 73px "Roboto")
-  }
-
-  @include media(min, lg) {
-    @include font(normal 700 96px / 105px "Roboto", 1.92px)
+  @include tablet() {
+    @include font(normal 700 34px / 38px "Roboto", 0.68px);
   }
 }
 
 h2 {
-  @include media(max, lg) {
-    @include font(normal 700 34px / 38px "Roboto", 0.68px)
-  }
+  @include font(normal 700 59px / 73px "Roboto");
 
-  @include media(min, lg) {
-    @include font(normal 700 59px / 73px "Roboto")
+  @include tablet() {
+    @include font(normal 700 34px / 38px "Roboto", 0.68px);
   }
 }
 
 h3 {
-  @include media(max, lg) {
-    @include font(normal 700 23px / 28px "Roboto", 0.92px)
-  }
+  @include font(normal 500 35px / 43px "Roboto");
 
-  @include media(min, lg) {
-    @include font(normal 500 35px / 43px "Roboto")
+  @include tablet() {
+    @include font(normal 700 23px / 28px "Roboto", 0.92px);
   }
 }
 

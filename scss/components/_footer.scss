@@ -9,13 +9,13 @@
         
         padding: 30px 1px;
 
-        @include media(max, lg) {
+        @include tablet() {
             justify-content: center;
             flex-wrap: wrap;
             row-gap: 7px;
         }
 
-        @include media(max, sm) {
+        @include mobile() {
             padding: 21px 1px;
         }
     }
@@ -32,7 +32,7 @@
 
         list-style: none;
 
-        @include media(max, lg) {
+        @include tablet() {
             gap: 15px;
         }
     }
@@ -41,7 +41,7 @@
         display: flex;
         gap: 10px;
 
-        @include media(max, lg) {
+        @include tablet() {
             gap: 5px;
         }
     }

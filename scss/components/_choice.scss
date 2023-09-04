@@ -6,7 +6,7 @@
         
         margin-bottom: 106px;
 
-        @include media(max, lg) {
+        @include tablet() {
             gap: 30px;
            
             margin-bottom: 50px;
@@ -26,7 +26,7 @@
         
         list-style: none;
 
-        @include media(max, sm) {
+        @include tablet() {
             flex-wrap: wrap;
             gap: 10px;
         }
@@ -46,7 +46,7 @@
                 text-underline-offset: 9px;
                 text-decoration-thickness: 2px;
 
-                @include media(max, lg) {
+                @include tablet() {
                     text-underline-offset: 4px;
                     text-decoration-thickness: 2px;
                 }
@@ -64,7 +64,7 @@
         justify-content: space-between;
         gap: 30px;
 
-        @include media(max, xxl) {
+        @include desktop() {
             gap: 18px;
         }
     }
@@ -72,11 +72,11 @@
     &__card {
         flex-basis: calc((100%/3) - 20px);
 
-        @include media(min, md, xxl) {
+        @include desktop() {
             flex-basis: calc(50% - 9px);
         }
 
-        @include media(max, md) {
+        @include mobile() {
             flex-basis: calc(100%);
         }
     }
@@ -98,7 +98,7 @@
     
     overflow: hidden;
 
-    @include media(max, lg) {
+    @include tablet() {
         height: 318px;
     }
 
@@ -114,7 +114,7 @@
 
         color: $white;
 
-        @include media(max, lg) {
+        @include tablet() {
             padding: 25px;
         }
 
@@ -126,7 +126,7 @@
     &__title {
         margin-bottom: 16px;
 
-        @include media(max, lg) {
+        @include tablet() {
             margin-bottom: 13px;
         }
     }

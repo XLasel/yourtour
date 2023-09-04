@@ -4,31 +4,25 @@
 }
 
 @mixin hover {
-  @media (hover: hover) and (pointer: fine) and (min-width: map-get($sizes, lg)) {
+  @media (hover: hover) and (pointer: fine) and (min-width: #{$tabletScreenSize}px) {
     @content;
   }
 }
 
-@function setMinOrMax($minmax, $from) {
-  @if #{$minmax} == 'min' {
-    @return calc($from + 1px);
-  } @else {
-    @return $from;
+@mixin desktop() {
+  @media only screen and (max-width: #{$desktopScreenSize}px) {
+    @content;
   }
 }
 
-@mixin media($minmax, $fromSize, $toSize: null) {
+@mixin tablet() {
+  @media only screen and (max-width: #{$tabletScreenSize}px) {
+    @content;
+  }
+}
 
-  $from: map-get($sizes, $fromSize);
-  $to: if($toSize,map-get($sizes, $toSize),null);
-
-  @if $to {
-    @media only screen and (min-width: calc($from + 1px)) and (max-width: $to) {
-      @content;
-    }
-  } @else {
-    @media only screen and (#{$minmax}-width: setMinOrMax($minmax, $from)) {
-      @content;
-    }
+@mixin mobile() {
+  @media only screen and (max-width: #{$mobileScreenSize}px) {
+    @content;
   }
 }

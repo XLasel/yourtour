@@ -1,12 +1,6 @@
-$sizes: (
-  "xxs": 380px,
-  "xs": 500px,
-  "sm": 576px,
-  "md": 668px,
-  "lg": 768px,
-  "xl": 950px,
-  "xxl": 1024px
-);
+$desktopScreenSize: 1280;
+$tabletScreenSize: 1000;
+$mobileScreenSize: 550;
 
 $black: #1b1f2b;
 $white: #ffffff;
@@ -25,13 +19,3 @@ $gray100: #F1F3F2;
 
 $beige200: #f4f0e9;
 $beige100: #f9f7f4;
-
-$section-mrg-bottom: (
-    small: 75px,
-    large: 135px
-);
-
-$main-border-radius: (
-    small: 20px,
-    large: 50px
-);

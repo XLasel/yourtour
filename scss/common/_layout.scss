@@ -15,7 +15,7 @@ main {
     margin: 0 auto;
     padding: 0 53px;
 
-    @include media(max, md) {
+    @include tablet() {
         padding: 0 21px;
     }
 
@@ -24,7 +24,7 @@ main {
         margin: 0 auto;
         padding: 0 30px;
 
-        @include media(max, xxl) {
+        @include desktop() {
             padding: 0 21px;
         }
     }
@@ -43,7 +43,7 @@ main {
     
     text-align: center;
 
-    @include media(max, lg) {
+    @include tablet() {
         gap: 20px;
 
         margin-bottom: 50px;

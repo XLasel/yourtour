@@ -1,30 +1,24 @@
 %p-normal {
-    @include media(max, lg) {
-        @include font(normal 400 16px / 23px "Roboto")
-    }
+    @include font(normal 400 20px / 28px "Roboto");
 
-    @include media(min, lg) {
-        @include font(normal 400 20px / 28px "Roboto")
+    @include tablet() {
+        @include font(normal 400 16px / 23px "Roboto");
     }
 }
 
 %p-big {
-    @include media(max, lg) {
-        @include font(normal 700 16px / 23px "Roboto")
-    }
+    @include font(normal 700 23px / 28px "Roboto");
 
-    @include media(min, lg) {
-        @include font(normal 700 23px / 28px "Roboto")
+    @include tablet() {
+        @include font(normal 700 16px / 23px "Roboto");
     }
 }
 
 %p-small {
-    @include media(max, lg) {
-        @include font(normal 400 16px / 23px "Roboto", -0.16px)
-    }
+    @include font(normal 400 17px / 24px "Roboto", -0.17px);
 
-    @include media(min, lg) {
-        @include font(normal 400 17px / 24px "Roboto", -0.17px)
+    @include tablet() {
+        @include font(normal 400 16px / 23px "Roboto", -0.16px);
     }
 }
 
@@ -49,21 +43,17 @@
 }
 
 %section-mrg-bottom {
-    @include media(max, lg) {
-        margin-bottom: map-get($section-mrg-bottom, small);
-    }
+    margin-bottom: 135px;
 
-    @include media(min, lg) {
-        margin-bottom: map-get($section-mrg-bottom, large);
+    @include tablet() {
+        margin-bottom: 75px;
     }
 }
 
 %main-border-radius {
-    @include media(max, lg) {
-        border-radius: map-get($main-border-radius, small);
-    }
+    border-radius: 50px;
 
-    @include media(min, lg) {
-        border-radius: map-get($main-border-radius, large);
+    @include tablet() {
+        border-radius: 20px;
     }
 }

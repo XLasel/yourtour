@@ -6,7 +6,7 @@
         flex-direction: column;
         gap: 50px;
 
-        @include media(max, lg) {
+        @include tablet() {
             gap: 20px;
         }
     }
@@ -29,7 +29,7 @@
     
     overflow: hidden;
 
-    @include media(max, lg) {
+    @include tablet() {
         height: 455px;
     }
 
@@ -63,7 +63,7 @@
         flex-direction: column;
         justify-content: space-between;
 
-        @include media(max, lg) {
+        @include tablet() {
             padding: 30px 25px 30px 30px;
         }
     }
@@ -75,12 +75,12 @@
     &__tittle {
         margin-bottom: 37px;
         
-        @include media(max, lg) {
+        @include tablet() {
             margin-bottom: 20px;
         }
 
         &--transfer {
-            @include media(max, xxs) {
+            @include mobile() {
                 display: block;
                 content: "\A";
                 white-space: pre;
@@ -92,7 +92,7 @@
         &>* {
             margin-bottom: 28px;
 
-            @include media(max, lg) {
+            @include tablet() {
                 margin-bottom: 23px;
             }
         }
@@ -101,14 +101,14 @@
     &__list {
         padding-left: 30px;
 
-        @include media(max, lg) {
+        @include tablet() {
             padding-left: 24px;
         }
 
         & li::marker {
             font-size: 16px;
 
-            @include media(max, lg) {
+            @include tablet() {
                 font-size: 13px;
             }
         }
@@ -127,7 +127,7 @@
         
         list-style: none;
 
-        @include media(max, sm) {
+        @include mobile() {
             display: none;
         }
     }
